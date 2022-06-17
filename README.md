@@ -1,9 +1,13 @@
 This project is inspired by the HiveMQ blog article [HiveMQ - Monitoring with Prometheus and Grafana](https://www.hivemq.com/blog/monitoring-hivemq-prometheus/).
 
-This project contains the script that runs in Docker the following containers:
-- HiveMQ with HiveMQ-Prometheus-Extension
-- Prometheus
-- Grafana
+This project contains a ready-to-use Grafana Dashboard that you can download directly and import to your Grafana:
+`grafana-dashboards/hivemq-dashboard.json`.
+
+This project contains a script `build_and_run_docker.sh` that builds a HiveMQ image and runs containers:
+  - HiveMQ broker with HiveMQ-Prometheus-Extension
+  - Prometheus (configured to scrape metrics from the HiveMQ)
+  - Grafana (with a sample HiveMQ-Dashboard)
+
 
 ### Disclaimer
 
@@ -16,6 +20,7 @@ This script is tested only with MacOS and Docker Desktop for Mac! To make it wor
 3. Open a Terminal and change to the project's root directory:
 
 ```cd docker-hivemq-with-prometheus```
+
 4. Run the script from the project's root directory:
 
 ```
