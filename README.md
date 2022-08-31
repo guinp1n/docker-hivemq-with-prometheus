@@ -11,7 +11,7 @@ This project contains a script `build_and_run_docker.sh` that builds a HiveMQ im
 
 ### Disclaimer
 
-This script is tested only with MacOS and Docker Desktop for Mac! To make it work in Linux you will need to modify the script (see section 'For non-MacOs users').
+This script is tested only with MacOS and Docker Desktop for **Intel** Mac! To make it work in Linux you will need to modify the script (see section 'For non-MacOs users').
 
 # Quick start
 
